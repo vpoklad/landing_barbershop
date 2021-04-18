@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="navigation__menu">
+          <li class="navigation__item">
+            <a href="" class="navigation__link navigation__link--active"
+              >О нас</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Услуги и цены</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Мастера</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="contact-menu">
+          <a href="tel:+380441111111" class="contact-menu__link"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="button button--white">
+            онлайн-запись
+          </button>
+        </div>
+      </nav>
+    </header>
+    <aside class="header-aside">
+      <img
+        class="logo"
+        src="./images/Logo.svg"
+        width="69"
+        alt="логопит компании"
+      />
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="http://"
+            class="social-list__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="social-list__item">
+          <a
+            href="http://"
+            class="social-list__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <!-- Section hero -->
+
+      <section class="section section--hero">
+        <div class="container">
+          <p class="section-comment">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-text">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+        </div>
+      </section>
+
+      <!-- Про нас -->
+
+      <section class="section">
+        <div class="container">
+          <p class="section-comment">о нас</p>
+          <ul class="about-photo-list">
+            <li class="abuot-photo-list__item">
+              <img src="" class="abuot-photo-list__image" alt="" />
+            </li>
+            <li class="abuot-photo-list__item">
+              <img src="" class="abuot-photo-list__image" alt="" />
+            </li>
+          </ul>
+          <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+          <p>
+            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+            к нам.
+          </p>
+          <p>
+            Мы команда, которая никогда не останавливается на достигнутом и
+            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+            никогда не сможешь быть прежним. Мы команда, которая всегда с
+            клиентами "на одной волне". Поэтому, мы всегда готовы
+            усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <button type="button" class="button button--white">
+            онлайн-запись
+          </button>
+        </div>
+      </section>
+
+      <!-- Прайс -->
+
+      <section class="section">
+        <div class="container">
+          <p class="section-comment">
+            Проведи время в компании лучших мастеров
+          </p>
+          <h2 class="section-title">Услуги и цены</h2>
+          <div class="price">
+            <div class="price__container">
+              <ul class="price__list">
+                <li class="price__item">
+                  <span class="price__type">Мужская стрижка</span
+                  ><span class="price__price">от 300 грн.</span>
+                  <span class="price__type">Стрижка бороды</span
+                  ><span class="price__price">от 200 грн.</span>
+                  <span class="price__type">Стрижка усов</span
+                  ><span class="price__price">от 200 грн.</span>
+                  <span class="price__type">Бритье опасной бритвой</span
+                  ><span class="price__price">от 200 грн.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="price__container">
+              <ul class="price__list">
+                <li class="price__item">
+                  <span class="price__type">Cтрижка у стажера</span
+                  ><span class="price__price">от 50 грн.</span>
+                  <span class="price__type">Стрижка под насадку</span
+                  ><span class="price__price">от 200 грн.</span>
+                  <span class="price__type">Детская стрижка (до 12 лет)</span
+                  ><span class="price__price">от 300 грн.</span>
+                  <span class="price__type">Камуфлирование седины</span
+                  ><span class="price__price">от 200 грн.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="button button--white">
+            онлайн-запись
+          </button>
+        </div>
+        <!-- /container -->
+      </section>
+
+      <!-- ПОчему мы -->
+      <section class="section">
+        <div class="container">
+          <div class="labels">
+            <ul class="labels__list">
+              <li class="labels__item">
+                <span class="labels__number">600</span><sup>+</sup>
+                <p class="labels__text">Довольных клиентов в день</p>
+              </li>
+
+              <li class="labels__item">
+                <span class="labels__number">500</span><sup>+</sup>
+                <p class="labels__text">Наград за отличный сервис</p>
+              </li>
+
+              <li class="labels__item">
+                <span class="labels__number">20</span><sup>+</sup>
+                <p class="labels__text">Лучших мастеров Киева</p>
+              </li>
+
+              <li class="labels__item">
+                <span class="labels__number">100</span><sup>+</sup>
+                <p class="labels__text">Подарков постоянным клиентам</p>
+              </li>
+            </ul>
+          </div>
+          <p class="section-comment">старая традиционная школа</p>
+          <h2 class="section-title">Почему приходят именно к нам?</h2>
+          <p>
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+        </div>
+      </section>
+      <!-- Наши мастера -->
+      <section class="section">
+        <div class="container">
+          <p class="section-comment">для настоящих ценителей атмосферы</p>
+          <h2 class="section-title">Наши мастера</h2>
+          <ul class="cardset">
+            <li class="cardset__item">
+              <img src="" alt="" />
+              <div class="cardset__meta">
+                <h3 class="cardset__name">John Smith</h3>
+                <p class="cardset__position">Extreme Barber</p>
+                <ul class="social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Instagram link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Insta</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="twitter link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Twitter</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Facebook link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Fcebook</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="LinkedIn link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="cardset__item">
+              <img src="" alt="" />
+              <div class="cardset__meta">
+                <h3 class="cardset__name">Michele Doe</h3>
+                <p class="cardset__position">Extreme Barber</p>
+                <ul class="social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Instagram link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Insta</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="twitter link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Twitter</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Facebook link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Fcebook</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="LinkedIn link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="cardset__item">
+              <img src="" alt="" />
+              <div class="cardset__meta">
+                <h3 class="cardset__name">Alan Black</h3>
+                <p class="cardset__position">Extreme Barber</p>
+                <ul class="social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Instagram link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Insta</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="twitter link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Twitter</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="Facebook link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Fcebook</a
+                    >
+                    <a
+                      href="http://"
+                      class="social-list__link"
+                      aria-label="LinkedIn link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Портфолио -->
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Портфолио</h2>
+          <p class="section-comment">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+
+            <li class="portfolio__item">
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Онлайн запись -->
+
+      <div class="container">
+        <section class="section">
+          <div class="online-appointment">
+            <h2 class="online-appointment__title">Онлайн-запись</h2>
+            <form class="online-appointment__form">
+              <input type="text" name="user-name" placeholder="ИМЯ*" required />
+              <input
+                type="tel"
+                name="user-tel"
+                placeholder="ТЕЛЕФОН*"
+                required
+              />
+              <textarea
+                name="user-message"
+                cols="30"
+                rows="5"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="submit" class="button button--white">
+                отправить
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section">
+          <h2 class="section-title">Контакты</h2>
+          <address class="address">
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <a
+                  href="http://"
+                  class="contact-list__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ул. Васильковая, 7А Киев, 08132</a
+                >
+              </li>
+
+              <li class="contact-list__item">
+                <a href="tel:+380441111111" class="contact-list__link"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+
+              <li class="contact-list__item">
+                <a href="mailto:barbershop@email.com" class="contact-list__link"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <p class="section-comment">время работы</p>
+          <p>Ежедневно с 9:00 до 22:00</p>
+        </section>
+      </div>
+      <!-- /container -->
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">&copy; Copyright 2020</p>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              href="http://"
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href="http://"
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
