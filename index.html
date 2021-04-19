@@ -3,26 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <title>Barbershop</title>
   </head>
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="header">
+      <a href="/" class="logo">
+        <svg class="icon" width="68.97" height="55.46">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button
+        type="button"
+        class="button-mobile-menu"
+        aria-label="кнопка мобильного меню"
+        data-menu-button
+      >
+        <svg class="icon" width="40" height="40">
+          <use href="./images/sprite.svg#icon-burger" class="icon-burger"></use>
+          <use href="./images/sprite.svg#icon-cross" class="icon-cross"></use>
+        </svg>
+      </button>
+
+      <nav class="navigation" data-menu>
         <ul class="navigation__menu">
           <li class="navigation__item">
-            <a href="" class="navigation__link navigation__link--active"
+            <a href="#about" class="navigation__link navigation__link--active"
               >О нас</a
             >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Услуги и цены</a>
+            <a href="#price" class="navigation__link">Услуги и цены</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Мастера</a>
+            <a href="#masters" class="navigation__link">Мастера</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Контакты</a>
+            <a href="#contacts" class="navigation__link">Контакты</a>
           </li>
         </ul>
         <div class="contact-menu">
@@ -33,43 +63,38 @@
             онлайн-запись
           </button>
         </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              href="http://"
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href="http://"
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
-    <aside class="header-aside">
-      <img
-        class="logo"
-        src="./images/Logo.svg"
-        width="69"
-        alt="логопит компании"
-      />
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            href="http://"
-            class="social-list__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Instagram</a
-          >
-        </li>
-        <li class="social-list__item">
-          <a
-            href="http://"
-            class="social-list__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Youtube</a
-          >
-        </li>
-      </ul>
-    </aside>
+
     <main>
       <!-- Section hero -->
 
       <section class="section section--hero">
-        <div class="container">
-          <p class="section-comment">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
+        <div class="hero-inner">
+          <p class="section-comment section-comment--dark">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="page-title">BarberShop</h1>
           <p class="hero-text">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
@@ -79,7 +104,7 @@
 
       <!-- Про нас -->
 
-      <section class="section">
+      <section class="section" id="about">
         <div class="container">
           <p class="section-comment">о нас</p>
           <ul class="about-photo-list">
@@ -110,7 +135,7 @@
 
       <!-- Прайс -->
 
-      <section class="section">
+      <section class="section" id="price">
         <div class="container">
           <p class="section-comment">
             Проведи время в компании лучших мастеров
@@ -189,7 +214,7 @@
         </div>
       </section>
       <!-- Наши мастера -->
-      <section class="section">
+      <section class="section" id="masters">
         <div class="container">
           <p class="section-comment">для настоящих ценителей атмосферы</p>
           <h2 class="section-title">Наши мастера</h2>
@@ -385,7 +410,7 @@
         </section>
 
         <!-- Контакты -->
-        <section class="section">
+        <section class="section" id="contacts">
           <h2 class="section-title">Контакты</h2>
           <address class="address">
             <ul class="contact-list">
@@ -444,5 +469,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>
