@@ -35,7 +35,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: $title-color-dark;
+  color: var(--title-color-dark);
   margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@
   font-size: 48px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  color: $title-color-light;
+  color: var(--title-color-light);
   margin-bottom: 20px;
 }
 
@@ -56,5 +56,5 @@
   font-size: 16px;
   line-height: 1.62;
 
-  color: $text-color-light;
+  color: var(--text-color-light);
 }
