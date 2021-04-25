@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="/" class="logo">
+      <a href="/" class="link logo">
         <svg class="icon" width="68.97" height="55.46">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
@@ -39,35 +39,35 @@
       </button>
 
       <nav class="navigation" data-menu>
-        <ul class="navigation__menu">
+        <ul class="list navigation__menu">
           <li class="navigation__item">
-            <a href="#about" class="navigation__link navigation__link--active"
+            <a
+              href="#about"
+              class="link navigation__link navigation__link--active"
               >О нас</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#price" class="navigation__link">Услуги и цены</a>
+            <a href="#price" class="link navigation__link">Услуги и цены</a>
           </li>
           <li class="navigation__item">
-            <a href="#masters" class="navigation__link">Мастера</a>
+            <a href="#masters" class="link navigation__link">Мастера</a>
           </li>
           <li class="navigation__item">
-            <a href="#contacts" class="navigation__link">Контакты</a>
+            <a href="#contacts" class="link navigation__link">Контакты</a>
           </li>
         </ul>
         <div class="contact-menu">
-          <a href="tel:+380441111111" class="contact-menu__link"
+          <a href="tel:+380441111111" class="link contact-menu__link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="button button--white">
-            онлайн-запись
-          </button>
+          <button type="button" class="button">онлайн-запись</button>
         </div>
-        <ul class="social-list">
+        <ul class="list social-list line">
           <li class="social-list__item">
             <a
               href="http://"
-              class="social-list__link"
+              class="link social-list__link"
               target="_blank"
               rel="noopener noreferrer"
               >Instagram</a
@@ -76,7 +76,7 @@
           <li class="social-list__item">
             <a
               href="http://"
-              class="social-list__link"
+              class="link social-list__link"
               target="_blank"
               rel="noopener noreferrer"
               >Youtube</a
@@ -90,15 +90,17 @@
       <!-- Section hero -->
 
       <section class="section section--hero">
-        <div class="hero-inner">
-          <p class="section-comment section-comment--dark">
-            A hair salon for men in Kyiv
-          </p>
-          <h1 class="page-title">BarberShop</h1>
-          <p class="hero-text">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
-            со вкусом.
-          </p>
+        <div class="container">
+          <div class="hero-inner">
+            <p class="section-comment section-comment--dark line">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="page-title">BarberShop</h1>
+            <p class="hero-text">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -106,7 +108,7 @@
 
       <section class="section" id="about">
         <div class="container">
-          <p class="section-comment">о нас</p>
+          <p class="section-comment line">о нас</p>
           <ul class="about-photo-list">
             <li class="abuot-photo-list__item">
               <img src="" class="abuot-photo-list__image" alt="" />
@@ -469,7 +471,7 @@
         </ul>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
     <script src="./js/menu-mobile.js"></script>
   </body>
 </html>

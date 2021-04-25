@@ -34,6 +34,18 @@ body {
   }
 }
 
+.section-comment {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-color-dark);
+  margin-bottom: 20px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -50,7 +62,13 @@ img {
   height: auto;
 }
 
-.logo {
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
   text-decoration: none;
 }
 
@@ -80,13 +98,31 @@ p {
   fill: currentColor;
 }
 
-.navigation {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  width: 70%;
-  height: 100vh;
-  background-color: #fff;
+.line::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: currentColor;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 118px;
+    padding-left: 40px;
+  }
+}
+
+.navigation.is-open {
+  display: block;
 }
 
 .header {
@@ -104,12 +140,13 @@ p {
 
 .logo {
   color: #fff;
+  display: block;
 }
 
 .button-mobile-menu {
   z-index: 4;
   background-color: transparent;
-  color: #000;
+  color: #fff;
   width: 40px;
   height: 40px;
   border: none;
@@ -122,9 +159,78 @@ p {
   }
 }
 
+.button-mobile-menu.is-open {
+  color: #000;
+}
+
 .icon-burger,
 .icon-cross {
   fill: currentColor;
+}
+
+.icon-cross {
+  opacity: 0;
+}
+
+.button-mobile-menu.is-open .icon-burger {
+  opacity: 0;
+}
+
+.button-mobile-menu.is-open .icon-cross {
+  opacity: 1;
+}
+
+.navigation__menu {
+  margin-bottom: 64px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.navigation__link,
+.contact-menu__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.1em;
+  color: var(--title-color-dark);
+}
+
+.navigation__link:hover, .navigation__link:focus,
+.contact-menu__link:hover,
+.contact-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.navigation__link--active {
+  color: var(--accent-color);
+}
+
+.contact-menu__link {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.button {
+  min-width: 160px;
+  padding: 12px 37px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-color-dark);
+  cursor: pointer;
+}
+
+.button:focus, .button:hover {
+  background-color: var(--accent-color);
+  color: var(--title-color-light);
 }
 
 .section--hero {
