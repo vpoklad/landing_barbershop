@@ -24,11 +24,14 @@
 }
 
 .hero-inner {
-  max-width: 360px;
-  margin-left: 31px;
+  width: calc(100% / 12 * 5);
+  max-width: 500px;
+  margin-left: 200px;
+  padding-top: 272px;
+  padding-bottom: 206px;
 }
 
-.section-comment{
+.section-comment {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

@@ -107,6 +107,19 @@ p {
   background-color: currentColor;
 }
 
+.social-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.social-list__link {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--title-color-dark);
+}
+
 @media (max-width: 767px) {
   .navigation {
     display: none;
@@ -231,6 +244,10 @@ p {
 .button:focus, .button:hover {
   background-color: var(--accent-color);
   color: var(--title-color-light);
+}
+
+.navigation .button {
+  margin-bottom: 64px;
 }
 
 .section--hero {
