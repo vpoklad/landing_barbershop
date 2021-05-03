@@ -1,7 +1,12 @@
-@import './utils/variables';
-@import './components/body';
-@import './utils/utils';
 @import './utils/mixin';
-@import './components/header';
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
 @import './components/buttons';
-@import './components/section_hero';
+@import './components/logo';
+@import './components/navigation';
+
+@import './components/social-list';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/section_hero';

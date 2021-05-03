@@ -24,14 +24,12 @@
 }
 
 .hero-inner {
-  width: calc(100% / 12 * 5);
-  max-width: 500px;
-  margin-left: 200px;
-  padding-top: 272px;
-  padding-bottom: 206px;
+  max-width: 306px;
 }
 
 .section-comment {
+  display: inline-flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -53,6 +51,9 @@
   letter-spacing: 0.05em;
   color: var(--title-color-light);
   margin-bottom: 20px;
+  @include for-size(phone-only) {
+    font-size: 44px;
+  }
 }
 
 .hero-text {

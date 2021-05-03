@@ -24,3 +24,33 @@
 .navigation .button {
   margin-bottom: 64px;
 }
+
+.button-mobile-menu {
+  @include for-size(tablet-up) {
+    display: none;
+  }
+
+  z-index: 4;
+  background-color: transparent;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.button-mobile-menu.is-open {
+  color: #000;
+}
+.icon-burger,
+.icon-cross {
+  fill: currentColor;
+}
+.icon-cross {
+  opacity: 0;
+}
+.button-mobile-menu.is-open .icon-burger {
+  opacity: 0;
+}
+.button-mobile-menu.is-open .icon-cross {
+  opacity: 1;
+}
