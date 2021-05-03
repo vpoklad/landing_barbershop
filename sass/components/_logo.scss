@@ -1,4 +1,9 @@
 .logo {
   color: #fff;
   display: block;
+
+  @include for-size(tablet-up) {
+    color: var(--title-color-dark);
+    margin-right: 64px;
+  }
 }

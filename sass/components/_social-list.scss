@@ -1,10 +1,26 @@
 .social-list {
   position: relative;
   padding-left: 100px;
+
+  @include for-size(tablet-up) {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    padding: 0;
+    left: -97px;
+    bottom: -361px;
+    transform: rotate(-90deg) translateX(50%);
+  }
 }
 .social-list__item {
   &:not(:last-child) {
-    margin-bottom: 24px;
+    @include for-size(phone-only) {
+      margin-bottom: 24px;
+    }
+
+    @include for-size(tablet-up) {
+      margin-right: 40px;
+    }
   }
 }
 .social-list__link {
@@ -14,9 +30,15 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--title-color-dark);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .social-list.line::before {
-  position: absolute;
-  top: 9px;
-  left: 0;
+  @include for-size(phone-only) {
+    position: absolute;
+    top: 9px;
+    left: 0;
+  }
 }

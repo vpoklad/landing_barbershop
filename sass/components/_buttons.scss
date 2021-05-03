@@ -23,6 +23,11 @@
 
 .navigation .button {
   margin-bottom: 64px;
+  @include for-size(tablet-up) {
+    margin-bottom: 20px;
+    color: var(--title-color-light);
+    padding: 12px 20px;
+  }
 }
 
 .button-mobile-menu {

@@ -13,6 +13,8 @@
     box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
       -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
   }
+  display: flex;
+  width: 100%;
 }
 
 .navigation.is-open {
@@ -20,10 +22,20 @@
 }
 
 .navigation__menu {
-  margin-bottom: 64px;
+  @include for-size(phone-only) {
+    margin-bottom: 64px;
+  }
+
+  @include for-size(tablet-up) {
+    display: flex;
+  }
 }
 .navigation__item:not(:last-child) {
   margin-bottom: 24px;
+  @include for-size(tablet-up) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
 }
 
 .navigation__link,
@@ -37,6 +49,23 @@
   &:focus {
     color: var(--accent-color);
   }
+  @include for-size(tablet-up) {
+    color: var(--title-color-light);
+    font-size: 12px;
+  }
+}
+.contact-menu {
+  @include for-size(tablet-up) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @include for-size(desktop-up) {
+    margin-left: auto;
+    flex-direction: row;
+  }
 }
 
 .navigation__link--active {
@@ -44,6 +73,9 @@
 }
 
 .contact-menu__link {
+  @include for-size(desktop-up) {
+    margin-right: 40px;
+  }
   text-transform: uppercase;
   margin-bottom: 24px;
   display: block;
