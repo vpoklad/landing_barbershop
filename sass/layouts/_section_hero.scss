@@ -22,11 +22,10 @@
       url(./../images/hero-mobile@2x.jpg);
   }
 
-  @include for-size(tablet-up) {
+  @media screen and (min-width: 481px) {
     max-width: 768px;
     background-color: #fff;
     background-image: url(../../images/hero-tablet.jpg);
-    background-position: 120px 0px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -35,6 +34,7 @@
   }
   @include for-size(tablet-up) {
     max-width: 1200px;
+    background-position: 120px 0px;
 
     background-image: url(../../images/hero-desktop.jpg);
     background-position: 120px 0px;

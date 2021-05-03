@@ -20,10 +20,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 img {
@@ -336,6 +342,16 @@ p {
   }
 }
 
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18x;
+  letter-spacing: 0.05em;
+  color: var(--title-color-dark);
+  margin-bottom: 20px;
+}
+
 .section {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -343,7 +359,7 @@ p {
 
 .header {
   width: 100%;
-  max-width: 480px;
+  max-width: 1200px;
   padding-left: 31px;
   padding-right: 31px;
   position: absolute;
@@ -352,12 +368,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: end;
-}
-
-@media (min-width: 768px) {
-  .header {
-    max-width: 1200px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -383,16 +393,15 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .section--hero {
     max-width: 768px;
     background-color: #fff;
     background-image: url(../../images/hero-tablet.jpg);
-    background-position: 120px 0px;
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .section--hero {
     background-image: url(../../images/hero-tablet@2x.jpg);
   }
@@ -401,6 +410,7 @@ p {
 @media (min-width: 768px) {
   .section--hero {
     max-width: 1200px;
+    background-position: 120px 0px;
     background-image: url(../../images/hero-desktop.jpg);
     background-position: 120px 0px;
   }
@@ -452,5 +462,17 @@ p {
   font-size: 16px;
   line-height: 1.62;
   color: var(--text-color-light);
+}
+
+.about-photo-list {
+  display: none;
+}
+
+.first-paragraf {
+  margin-bottom: 20px;
+}
+
+.last-paragraf {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */

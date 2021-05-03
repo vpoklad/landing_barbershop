@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  max-width: 480px;
+  max-width: 1200px;
 
   padding-left: 31px;
   padding-right: 31px;
@@ -11,10 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
-
-  @include for-size(tablet-up) {
-    max-width: 1200px;
-  }
 
   @include for-size(desktop-up) {
     justify-content: flex-start;
