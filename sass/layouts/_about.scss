@@ -1,9 +1,15 @@
 .about-photo-list {
-  display: none;
+  @include for-size(phone-only) {
+    display: none;
+  }
 }
 .first-paragraf {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 .last-paragraf {
   margin-bottom: 40px;
+}
+.abuot-photo-list__item:first-child {
+  margin-bottom: 30px;
 }

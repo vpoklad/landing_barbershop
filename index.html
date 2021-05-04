@@ -110,16 +110,23 @@
 
       <section class="section" id="about">
         <div class="container">
+          <div class="grid">
           
-          <ul class="about-photo-list list">
+          <ul class="about-photo-list list grid__item">
             <li class="abuot-photo-list__item">
-              <img src="" class="abuot-photo-list__image" alt="" />
+              <picture>
+                <source srcset="./images/about-img-1-tablet.jpg 1x, ./images/about-img-1-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"  />
+              <img src="./images/about-img-1-tablet.jpg" class="abuot-photo-list__image" alt="бритье" width="330" />
+              </picture>              
             </li>
             <li class="abuot-photo-list__item">
-              <img src="" class="abuot-photo-list__image" alt="" />
+              <picture>
+                <source srcset="./images/about-img-2-tablet.jpg 1x, ./images/about-img-2-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"  />
+              <img src="./images/about-img-2-tablet.jpg" class="abuot-photo-list__image" alt="бритье" width="330" />
+              </picture>
             </li>
           </ul>
-          <div class="text-wraper">
+          <div class="text-wraper grid__item">
           <p class="section-comment line">о нас</p>
           <h2 class="section-title">Лучший Барбершоп твоего города</h2>
           <p class="first-paragraf">
@@ -136,6 +143,7 @@
           <button type="button" class="button button--white">
             онлайн-запись
           </button>
+          </div>
           </div>
         </div> <!-- /container -->
       </section>

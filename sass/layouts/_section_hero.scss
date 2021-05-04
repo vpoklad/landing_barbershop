@@ -48,6 +48,9 @@
 
 .hero-inner {
   max-width: 306px;
+  @include for-size(tablet-up) {
+    margin-left: 279px;
+  }
 }
 
 .section-comment {
