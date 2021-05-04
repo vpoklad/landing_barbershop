@@ -51,34 +51,24 @@
   @include for-size(tablet-up) {
     margin-left: 279px;
   }
+  @include for-size(desktop-up) {
+    margin-left: 200px;
+  }
 }
 
-.section-comment {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--title-color-dark);
-  margin-bottom: 20px;
-}
-
-.section-comment--dark {
-  color: rgba(157, 164, 189, 0.6);
-}
 .page-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--title-color-light);
   margin-bottom: 20px;
-  @include for-size(phone-only) {
-    font-size: 44px;
+  @include for-size(tablet-up) {
+    font-size: 48px;
+  }
+  @include for-size(desktop-up) {
+    font-size: 72px;
   }
 }
 

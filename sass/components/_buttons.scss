@@ -21,6 +21,10 @@
   }
 }
 
+.button--white {
+  color: var(--title-color-light);
+}
+
 .navigation .button {
   margin-bottom: 64px;
   @include for-size(tablet-up) {

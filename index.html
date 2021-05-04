@@ -113,22 +113,26 @@
           <div class="grid">
           
           <ul class="about-photo-list list grid__item">
-            <li class="abuot-photo-list__item">
+            <li class="about-photo-list__item">
               <picture>
+                <source srcset="./images/about-img-1-desktop.jpg 1x, ./images/about-img-1-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"  />
                 <source srcset="./images/about-img-1-tablet.jpg 1x, ./images/about-img-1-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"  />
-              <img src="./images/about-img-1-tablet.jpg" class="abuot-photo-list__image" alt="бритье" width="330" />
+                
+              <img src="./images/about-img-1-tablet.jpg" class="about-photo-list__image" alt="бритье" width="330" />
               </picture>              
             </li>
             <li class="abuot-photo-list__item">
               <picture>
+                <source srcset="./images/about-img-2-desktop.jpg 1x, ./images/about-img-2-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"  />
                 <source srcset="./images/about-img-2-tablet.jpg 1x, ./images/about-img-2-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"  />
-              <img src="./images/about-img-2-tablet.jpg" class="abuot-photo-list__image" alt="бритье" width="330" />
+                
+              <img src="./images/about-img-2-tablet.jpg" class="about-photo-list__image" alt="стрижка" width="330" />
               </picture>
             </li>
           </ul>
           <div class="text-wraper grid__item">
           <p class="section-comment line">о нас</p>
-          <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+          <h2 class="section-title section-title--about">Лучший Барбершоп твоего города</h2>
           <p class="first-paragraf">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
@@ -140,7 +144,7 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button type="button" class="button button--white">
+          <button type="button" class="button">
             онлайн-запись
           </button>
           </div>
@@ -150,49 +154,56 @@
 
       <!-- Прайс -->
 
-      <!-- <section class="section" id="price">
+      <section class="section section--price" id="price">
         <div class="container">
-          <p class="section-comment">
+          <p class="section-comment section-comment--dark line">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="section-title">Услуги и цены</h2>
-          <div class="price">
-            <div class="price__container">
-              <ul class="price__list">
-                <li class="price__item">
-                  <span class="price__type">Мужская стрижка</span
-                  ><span class="price__price">от 300 грн.</span>
-                  <span class="price__type">Стрижка бороды</span
-                  ><span class="price__price">от 200 грн.</span>
-                  <span class="price__type">Стрижка усов</span
-                  ><span class="price__price">от 200 грн.</span>
-                  <span class="price__type">Бритье опасной бритвой</span
-                  ><span class="price__price">от 200 грн.</span>
-                </li>
-              </ul>
-            </div>
+          <h2 class="section-title section-title--light">Услуги и цены</h2>
+          <div class="price-wrapper">
+            
+              <ul class="price__list list">
 
-            <div class="price__container">
-              <ul class="price__list">
                 <li class="price__item">
-                  <span class="price__type">Cтрижка у стажера</span
-                  ><span class="price__price">от 50 грн.</span>
-                  <span class="price__type">Стрижка под насадку</span
-                  ><span class="price__price">от 200 грн.</span>
-                  <span class="price__type">Детская стрижка (до 12 лет)</span
-                  ><span class="price__price">от 300 грн.</span>
-                  <span class="price__type">Камуфлирование седины</span
-                  ><span class="price__price">от 200 грн.</span>
+                  <span class="price__item-serv">Мужская стрижка </span><span> от 300 грн.</span>
                 </li>
+
+                <li class="price__item">
+                  <span class="price__item-serv">Стрижка бороды </span><span> от 200 грн.</span>
+                </li>
+
+                <li class="price__item">
+                  <span class="price__item-serv">Стрижка усов </span><span> от 200 грн.</span>
+                </li>
+
+                <li class="price__item">
+                  <span class="price__item-serv">Бритье опасной бритвой </span><span> от 200 грн.</span>
+                </li>                
               </ul>
-            </div>
-          </div>
-          <button type="button" class="button button--white">
+           
+
+            
+              <ul class="price__list list">
+                <li class="price__item">
+                <span class="price__item-serv">Cтрижка у стажера </span><span> от 50 грн.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__item-serv">Стрижка под насадку </span><span> от 200 грн.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__item-serv">Детская стрижка (до 12 лет) </span><span> от 300 грн.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__item-serv">Камуфлирование седины </span><span> от 200 грн.</span>
+              </li>
+              </ul>
+            
+          </div><!-- /price-wrapper -->
+          <button type="button" class="button button--white center">
             онлайн-запись
           </button>
-        </div>
-        <!-- /container -->
-      </section> -->
+        </div> <!-- /container -->
+      </section>
 
       <!-- ПОчему мы -->
       <!-- <section class="section">
